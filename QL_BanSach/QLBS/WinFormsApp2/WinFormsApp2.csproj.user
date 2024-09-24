@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="FormCNLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormCNSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormQLBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormQLNS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTKDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTKS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
