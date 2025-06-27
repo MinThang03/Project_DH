@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btthoat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/muiten"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Yêu cầu xóa tài khoản"
+            android:layout_marginLeft="50dp"
+            android:textColor="#FF7F00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Nhập thông tin -->
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="CẢNH BÁO"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="Khi xoá tài khoản, các thông tin sau (nếu có) sẽ bị xoá trên hệ thống:"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="- Thông tin cá nhân"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="- Thông tin lịch sử chuyến và danh sách xe"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="Tiền ví và điểm thưởng sẽ được thanh toán theo quy định của chính sách hiện hành của TQ."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="Việc đồng ý xoá tài khoản là bạn đã chấp nhận điều khoản chính sách xoá tài khoản của TQ."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="Yêu cầu xoá tài khoản sẽ được xử lý trong vòng 15 ngày làm việc. TQ sẽ liên hệ trực tiếp với bạn thông qua Email hoặc Số điện thoại đã cung cấp."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="Mọi thắc mắc xin liên hệ Fanpage của TQ hoặc hotline 1900 9217 (9AM-9PM T2-T7) để được hỗ trợ."
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btxacnhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Xác nhận"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00bcd4"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>
