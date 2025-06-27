@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BTL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="hang_options">
+        <item>Hạng A</item>
+        <item>Hạng B</item>
+        <item>Hạng C</item>
+    </string-array>
+    <string name="tgian">Revenue Statistics</string>
+    <string-array name="time_range_options">
+        <item>Hôm nay</item>
+        <item>Tuần</item>
+        <item>Tháng</item>
+        <item>Năm</item>
+    </string-array>
+</resources>

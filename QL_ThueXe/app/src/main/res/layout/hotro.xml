@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Trung tâm hỗ trợ nhanh"
+            android:layout_marginLeft="80dp"
+            android:textColor="#FF7F00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/carImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_9" />
+
+            <TextView
+                android:id="@+id/dcxe"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="#BBBBBB"
+                android:padding="4dp"
+                android:text="Cần hỗ trợ nhanh"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tgthue"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#BBBBBB"
+                android:padding="4dp"
+                android:text="Hotline: 0987654321 (7:00AM - 10:00PM)"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hinhthuc"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#BBBBBB"
+                android:padding="4dp"
+                android:text="Gửi tin nhắn vào TQFanpage"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <!-- Nhập thông tin -->
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Thông tin cá nhân"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/human"/>
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Họ và tên"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/nhapten"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bogoc3"
+                android:padding="4dp"
+                android:hint="  Họ và tên"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <!-- Nhập Số điện thoại -->
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Số điện thoại"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/nhapsdt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bogoc3"
+                android:padding="4dp"
+                android:hint="  Số điện thoại"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <!-- Nhập Email -->
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Email *"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/nhapemail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bogoc3"
+                android:padding="4dp"
+                android:hint="  Địa chỉ Email"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <!-- Chọn loại hỗ trợ -->
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Loại hỗ trợ"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/support"/>
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Chủ đề yêu cầu"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/loaihotro"
+                android:background="@drawable/bogoc3"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Nhập sản phẩm/dịch vụ -->
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Sản phẩm/Dịch vụ liên quan"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dichvu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bogoc3"
+                android:padding="4dp"
+                android:hint="  Sản phẩm/Dịch vụ liên quan"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Mô tả"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/mota"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bogoc3"
+                android:padding="4dp"
+                android:hint="  Nội dung"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnopdon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Nộp đơn"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#00bcd4"
+                android:layout_gravity="bottom" />
+
+            <!-- Thông tin -->
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                android:text="  Thông tin"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:drawableLeft="@drawable/thongtin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:padding="4dp"
+                        android:text="Thông tin công ty"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/town"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="#ffffff"
+                        android:padding="4dp"
+                        android:text="Chính sách và quy định"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/sach"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:padding="4dp"
+                        android:text="Đánh giá TQ"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/chat"/>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="0dp"
+                        android:padding="4dp"
+                        android:text="Fanpage"
+                        android:layout_marginLeft="30dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/fanpage"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:padding="4dp"
+                        android:text="Hỏi và trả lời"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/hoi"/>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="0dp"
+                        android:padding="4dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Quy chế hoạt động"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/quyche"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:padding="4dp"
+                        android:text="Bảo mật thông tin"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/khoa"/>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="0dp"
+                        android:padding="4dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Giải quyết tranh chấp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/can"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

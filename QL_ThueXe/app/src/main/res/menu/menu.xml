@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bthome"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Trang chủ"/>
+    <item
+        android:id="@+id/btxecuatoi"
+        android:icon="@drawable/baseline_directions_car_24"
+        android:title="Xe của tôi"/>
+    <item
+        android:id="@+id/bthotro"
+        android:icon="@drawable/support"
+        android:title="Hỗ trợ"/>
+    <item
+        android:id="@+id/btcanhan"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Cá nhân"/>
+
+</menu>

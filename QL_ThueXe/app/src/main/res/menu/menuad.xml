@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/qlxe"
+        android:icon="@drawable/baseline_directions_car_24"
+        android:title="QL Xe"/>
+    <item
+        android:id="@+id/qlkh"
+        android:icon="@drawable/baseline_person_24"
+        android:title="QL Khách Hàng"/>
+    <item
+        android:id="@+id/qlhd"
+        android:icon="@drawable/hoadon"
+        android:title="QL Hóa Đơn"/>
+    <item
+        android:id="@+id/thongke"
+        android:icon="@drawable/thongke"
+        android:title="Thống Kê"/>
+</menu>

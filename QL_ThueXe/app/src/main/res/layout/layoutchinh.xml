@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- FrameLayout chứa các Fragment -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"/>
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00BCD4"
+        app:menu="@menu/menu"/>
+
+    <!-- ImageButton hiển thị trên Fragment và BottomNavigationView -->
+    <ImageButton
+        android:id="@+id/call_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bogoc"
+        android:backgroundTint="#32CD32"
+        android:src="@drawable/call_24" />
+</RelativeLayout>

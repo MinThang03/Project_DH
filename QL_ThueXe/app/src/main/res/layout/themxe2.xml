@@ -1,0 +1,334 @@
+<!-- dialog_edit_info.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btthoat"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/muiten" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm xe"
+            android:textSize="24dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:textColor="#FF7F00"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="610dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên xe"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextTenxe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Tên xe"
+                android:drawableLeft="@drawable/pen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại xe"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerMaloai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bogoc3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hãng xe"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextHangxe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Hãng xe"
+                android:drawableLeft="@drawable/baseline_directions_car_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biển số xe"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextBienso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Biển số"
+                android:drawableLeft="@drawable/pass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá thuê xe"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Giá"
+                android:drawableLeft="@drawable/tien" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái xe"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextTrangthai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Trạng thái"
+                android:drawableLeft="@drawable/trangthai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số ghế"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextSoghe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Số ghế"
+                android:drawableLeft="@drawable/ghe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiểu số"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextKieuso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Kiểu số"
+                android:drawableLeft="@drawable/trangthai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Động cơ"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextDongco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Động cơ"
+                android:drawableLeft="@drawable/dongco" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cốp xe"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextCopxe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Cốp xe"
+                android:drawableLeft="@drawable/copxe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tốc độ"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextTocdo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Tốc độ"
+                android:drawableLeft="@drawable/tocdo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Túi khí"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextTuikhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Túi khí"
+                android:drawableLeft="@drawable/tuikhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô tả"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextMota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Mô tả"
+                android:drawableLeft="@drawable/chat2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình ảnh xe 1"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <!-- ImageView để hiển thị ảnh được chọn -->
+            <ImageView
+                android:id="@+id/imageViewanh1"
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bogoc3" />
+
+            <!-- Button để chọn ảnh từ thư viện -->
+            <Button
+                android:id="@+id/btanh1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#00bcd4"
+                android:text="Chọn ảnh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình ảnh xe 2"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <!-- ImageView để hiển thị ảnh được chọn -->
+            <ImageView
+                android:id="@+id/imageViewanh2"
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bogoc3" />
+
+            <!-- Button để chọn ảnh từ thư viện -->
+            <Button
+                android:id="@+id/btanh2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#00bcd4"
+                android:text="Chọn ảnh" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình ảnh xe 3"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <!-- ImageView để hiển thị ảnh được chọn -->
+            <ImageView
+                android:id="@+id/imageViewanh3"
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bogoc3" />
+
+            <!-- Button để chọn ảnh từ thư viện -->
+            <Button
+                android:id="@+id/btanh3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#00bcd4"
+                android:text="Chọn ảnh" />
+            <!-- Các nút xác nhận và hủy -->
+        </LinearLayout>
+    </ScrollView>
+        <Button
+            android:id="@+id/btthem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm xe"
+            android:textSize="24dp"
+            android:layout_marginEnd="8dp"/>
+
+</LinearLayout>

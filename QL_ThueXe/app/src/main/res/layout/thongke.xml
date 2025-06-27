@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thống Kê Tổng Hợp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp"/>
+
+    <!-- Lựa chọn khoảng thời gian -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoảng thời gian: "
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <Spinner
+            android:id="@+id/tgian"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:entries="@array/time_range_options"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btdt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Doanh Thu"
+            android:backgroundTint="#00BCD4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btslxedat"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Số Lượng Xe Đặt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btxetrongkho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số Lượng Xe Còn Trong Kho"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<!-- dialog_edit_info.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên khách hàng"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/editTextTenkh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Tên khách hàng"
+            android:drawableLeft="@drawable/human"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên tài khoản"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/editTextTentk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Tên tài khoản"
+            android:drawableLeft="@drawable/pen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/editTextSDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Số điện thoại"
+            android:drawableLeft="@drawable/phone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/editTextMatkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Mật khẩu"
+            android:drawableLeft="@drawable/pass"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Email"
+            android:drawableLeft="@drawable/email"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/editTextDiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Địa chỉ"
+            android:drawableLeft="@drawable/home"/>
+        <Button
+            android:id="@+id/btLuu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00bcd4"
+            android:text="Lưu thông tin" />
+    </LinearLayout>
+</ScrollView>
